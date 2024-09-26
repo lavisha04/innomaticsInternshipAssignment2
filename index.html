@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" >
+        <header>
+            <h1>Company Directory Portal</h1>
+        </header>
+
+        <section class="registration-form" style="background-color: rgb(226, 205, 43);">
+            <h2>Employee Registration Form</h2>
+            <form id="employeeForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                    <option value="IT">IT</option>
+                    <option value="HR">HR</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Research and development">Research and development</option>
+                    <option value="Production">Production</option>
+                </select>
+
+                <label for="employeeId">Employee ID:</label>
+                <input type="number" id="employeeId" name="employeeId" required>
+
+                <label for="profilePicture">Profile Picture URL:</label>
+                <input type="url" id="profilePicture" name="profilePicture">
+
+                <button type="submit">Register Employee</button>
+            </form>
+        </section>
+
+        <section class="employee-list">
+            <h2>Employee List</h2>
+            <ol id="employeeNames">
+                <li><a href ="#">lavishag4@gmail.com</a> </li>
+                <li><a href="#">jayeshbhopte@gmail.com</a></li>
+                <li><a href="#">rudikadam22@gmail.com</a></li>
+            </ol>
+        </section>
+
+        <section class="employee-details">
+            <h2>Employee Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Employee ID</th>
+                        <th>Department</th>
+                        <th>Profile Picture</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeDetails">
+                    <tr>
+                        <td>Lavisha gehlot</td>
+                        <td>45632</td>
+                        <td>IT</td>
+                        <td><img src="img.png" alt="Profile" width="50" height="50"></td>
+                    </tr>
+                    <tr>
+                        <td>Jayesh bhopte</td>
+                        <td>67890</td>
+                        <td>HR</td>
+                        <td><img src="images.png" alt="Profile" width="50" height="50"></td>
+                    </tr>
+                    <tr>
+                        <td>Rudi kadam</td>
+                        <td>89760</td>
+                        <td>Finance</td>
+                        <td><img src="img.png" alt="Profile" width="50" height="50"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="map-section">
+            <h2>Company Location</h2>
+            <iframe
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.2433092066617!2d75.82282147513234!3d22.756350079361244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396303ca0b26ad1b%3A0x42ef155b446fd473!2sYash%20Technologies%20IT%20Park%2C%20Super%20Corridor%2C%20Indore!5e0!3m2!1sen!2sin!4v1727282354039!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+        </section>
+    </div>
+
+   
+</body>
+</html>
